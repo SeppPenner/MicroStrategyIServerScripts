@@ -1,22 +1,41 @@
 import commands
 import os
+import datetime
+import sys
 
 #Script to stop the MicroStrategy Intelligence Server and check the state afterwards
 #Works with Python Version 2.6.8
+path = "/bi/MSTR/bin/mstrctl"
+starttime = datetime.datetime.now()
+
+def getTimeDiff():
+	"getTimeDiff"
+	timediff = datetime.datetime.now() - starttime
+	sys.stdout.write("\r%s" % str(timediff))
+	sys.stdout.flush()
+	return
+
 def isstate():
 	"isstate"
-	val = str(commands.getstatusoutput('/MicroStrategy/bin/mstrctl -s IntelligenceServer gs |grep -i state'))
+	val = str(commands.getstatusoutput(path + ' -s IntelligenceServer gs |grep -i state'))
 	while "stopping" in val:
-		val = str(commands.getstatusoutput('/MicroStrategy/bin/mstrctl -s IntelligenceServer gs |grep -i state'))
+		val = str(commands.getstatusoutput(path + ' -s IntelligenceServer gs |grep -i state'))
+		getTimeDiff()
 	while "unloading" in val:
-		val = str(commands.getstatusoutput('/MicroStrategy/bin/mstrctl -s IntelligenceServer gs |grep -i state'))
-	val = str(commands.getstatusoutput('/MicroStrategy/bin/mstrctl -s IntelligenceServer gs |grep -i state'))
-	print formatOutput(val)
+		val = str(commands.getstatusoutput(path + ' -s IntelligenceServer gs |grep -i state'))
+		getTimeDiff()
+	val = str(commands.getstatusoutput(path + ' -s IntelligenceServer gs |grep -i state'))
+	if "terminated" in val:
+		print ""
+		print 'terminated'
+	else:
+		print ""
+		print formatOutput(val)
 	return
 
 def isstop():
 	"isstop"
-	os.system('/MicroStrategy/bin/mstrctl -s IntelligenceServer stop')
+	os.system(path + ' -s IntelligenceServer stop')
 	return
 	
 def formatOutput(input):
@@ -35,4 +54,5 @@ def formatOutput(input):
 #Programm
 print 'Stopping MicroStrategy Intelligence Server'
 isstop()
+starttime = datetime.datetime.now()
 isstate()

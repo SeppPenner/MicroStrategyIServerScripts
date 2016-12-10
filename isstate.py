@@ -2,10 +2,15 @@ import commands
 
 #Script to show the MicroStrategy Intelligence Server's status
 #Works with Python Version 2.6.8
+path = "/bi/MSTR/bin/mstrctl"
+
 def isstate():
 	"isstate"
-	val = str(commands.getstatusoutput('/MicroStrategy/bin/mstrctl -s IntelligenceServer gs |grep -i state'))
-	print formatOutput(val)
+	val = str(commands.getstatusoutput(path + ' -s IntelligenceServer gs |grep -i state'))
+	if "terminated" in val:
+		print 'terminated'
+	else:
+		print formatOutput(val)
 	return
 	
 def formatOutput(input):

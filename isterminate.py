@@ -3,7 +3,7 @@ import os
 import datetime
 import sys
 
-#Script to start the MicroStrategy Intelligence Server and check the state afterwards
+#Script to terminate the MicroStrategy Intelligence Server and check the state afterwards
 #Works with Python Version 2.6.8
 path = "/bi/MSTR/bin/mstrctl"
 starttime = datetime.datetime.now()
@@ -18,7 +18,10 @@ def getTimeDiff():
 def isstate():
 	"isstate"
 	val = str(commands.getstatusoutput(path + ' -s IntelligenceServer gs |grep -i state'))
-	while "starting" in val:
+	while "stopping" in val:
+		val = str(commands.getstatusoutput(path + ' -s IntelligenceServer gs |grep -i state'))
+		getTimeDiff()
+	while "unloading" in val:
 		val = str(commands.getstatusoutput(path + ' -s IntelligenceServer gs |grep -i state'))
 		getTimeDiff()
 	val = str(commands.getstatusoutput(path + ' -s IntelligenceServer gs |grep -i state'))
@@ -30,9 +33,9 @@ def isstate():
 		print formatOutput(val)
 	return
 
-def isstart():
-	"isstart"
-	os.system(path + ' -s IntelligenceServer start')
+def isterminate():
+	"isterminate"
+	os.system(path + ' -s IntelligenceServer terminate')
 	return
 	
 def formatOutput(input):
@@ -49,7 +52,7 @@ def formatOutput(input):
 	return output
 
 #Programm
-print 'Starting MicroStrategy Intelligence Server'
-isstart()
+print 'Terminating MicroStrategy Intelligence Server'
+isterminate()
 starttime = datetime.datetime.now()
 isstate()

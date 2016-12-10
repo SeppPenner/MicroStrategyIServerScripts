@@ -7,6 +7,7 @@ MicroStrategyIServerScripts provide different scripts for the MicroStrategy Inte
 <li>isversion.py: Script to show the MicroStrategy Intelligence Server's version</li>
 <li>isstart.py:	Script to start the MicroStrategy Intelligence Server and check the state afterwards</li>
 <li>isstop.py: Script to stop the MicroStrategy Intelligence Server and check the state afterwards</li>
+<li>isterminate.py: Script to terminate the MicroStrategy Intelligence Server (Hardcore-Stopping the Intelligence Server)</li>
 </ul>
 
 The assembly was written and tested in Python 2.6.8 but runs as well in Python 2.7.9.

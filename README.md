@@ -33,7 +33,7 @@ python isterminate.py
 ```
 
 ## To define the aliases for the current user:
-Create a new file (if it doesn’t already exist) in the /<username> folder (e.g. /root) called .bashrc and add the aliases from above.
+Create a new file (if it doesn’t already exist) in the /<username> folder (e.g. /root) called .bashrc and add the aliases from [Bash.basrc](https://github.com/SeppPenner/MicroStrategyIServerScripts/blob/master/Bash.bashrc).
 Or copy the file [Bash.basrc](https://github.com/SeppPenner/MicroStrategyIServerScripts/blob/master/Bash.bashrc) to the server and rename it to .bashrc.
 
 ## Change the paths in the scripts:

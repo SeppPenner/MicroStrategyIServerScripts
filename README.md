@@ -16,11 +16,11 @@ The assembly was written and tested in Python 2.6.8 but runs as well in Python 2
 To add those scripts, copy the py-Files to your server under the /root-Folder and change the mode
 to be executable via:
 ```bash
-chmod +x isstate.py
-chmod +x isstart.py
-chmod +x isstop.py
-chmod +x isversion.py
-chmod +x isterminate.py
+chmod 755 isstate.py
+chmod 755 isstart.py
+chmod 755 isstop.py
+chmod 755 isversion.py
+chmod 755 isterminate.py
 ```
 
 ## To execute the scripts:

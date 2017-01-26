@@ -10,7 +10,7 @@ MicroStrategyIServerScripts provide different scripts for the MicroStrategy Inte
 <li>isterminate.py: Script to terminate the MicroStrategy Intelligence Server (Hardcore-stopping the Intelligence Server)</li>
 </ul>
 
-The assembly was written and tested in Python 2.6.8 but runs as well in Python 2.7.9.
+The script was written and tested in Python 2.6.8 but runs as well in Python 2.7.9.
 
 ## Basic usage:
 To add those scripts, copy the py-Files to your server under the /root-Folder and change the mode

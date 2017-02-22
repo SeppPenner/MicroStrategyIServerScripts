@@ -12,7 +12,7 @@ MicroStrategyIServerScripts provide different scripts for the MicroStrategy Inte
 
 The script was written and tested in Python 2.6.8 but runs as well in Python 2.7.9.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/h9n6uochm3mu3o2p?svg=true)](https://ci.appveyor.com/project/SeppPenner/microstrategyiserverscripts)[![Build status](https://ci.appveyor.com/api/projects/status/3k72g5f5m4hicirq?svg=true)](https://ci.appveyor.com/project/SeppPenner/thedummyproject)
+[![Build status](https://ci.appveyor.com/api/projects/status/h9n6uochm3mu3o2p?svg=true)](https://ci.appveyor.com/project/SeppPenner/microstrategyiserverscripts)
 
 ## Basic usage:
 To add those scripts, copy the py-Files to your server under the /root-Folder and change the mode

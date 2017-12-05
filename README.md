@@ -8,6 +8,7 @@ MicroStrategyIServerScripts provide different scripts for the MicroStrategy Inte
 <li>isstart.py:	Script to start the MicroStrategy Intelligence Server and check the state afterwards</li>
 <li>isstop.py: Script to stop the MicroStrategy Intelligence Server and check the state afterwards</li>
 <li>isterminate.py: Script to terminate the MicroStrategy Intelligence Server (Hardcore-stopping the Intelligence Server)</li>
+<li>isrestart.py:	Script to restart the MicroStrategy Intelligence Server</li>
 </ul>
 
 The script was written and tested in Python 2.6.8 but runs as well in Python 2.7.9.
@@ -23,6 +24,7 @@ chmod 755 isstart.py
 chmod 755 isstop.py
 chmod 755 isversion.py
 chmod 755 isterminate.py
+chmod 755 isrestart.py
 ```
 
 ## To execute the scripts:
@@ -32,6 +34,7 @@ python isstart.py
 python isstop.py
 python isversion.py
 python isterminate.py
+python isrestart.py
 ```
 
 ## To define the aliases for the current user:
@@ -43,6 +46,7 @@ You will need to change the paths in the scripts to your MicroStrategy Intellige
 
 Change history
 --------------
+* **Version 1.0.0.2 (2017-12-05)** : Added the script to restart the IServer, added alias to restart tomcat.
 
 * **Version 1.0.0.1 (2016-12-10)** : Added script to terminate IServer. Added function that shows the script's run time (start, stop and terminate).
 									 Fixed a bug in the status function to show the "terminated" status, too.

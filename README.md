@@ -14,6 +14,11 @@ MicroStrategyIServerScripts provide different scripts for the MicroStrategy Inte
 The script was written and tested in Python 2.6.8 but runs as well in Python 2.7.9.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/h9n6uochm3mu3o2p?svg=true)](https://ci.appveyor.com/project/SeppPenner/microstrategyiserverscripts)
+[![GitHub issues](https://img.shields.io/github/issues/SeppPenner/MicroStrategyIServerScripts.svg)](https://github.com/SeppPenner/MicroStrategyIServerScripts/issues)
+[![GitHub forks](https://img.shields.io/github/forks/SeppPenner/MicroStrategyIServerScripts.svg)](https://github.com/SeppPenner/MicroStrategyIServerScripts/network)
+[![GitHub stars](https://img.shields.io/github/stars/SeppPenner/MicroStrategyIServerScripts.svg)](https://github.com/SeppPenner/MicroStrategyIServerScripts/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/MicroStrategyIServerScripts/master/License.txt)
+[![Known Vulnerabilities](https://snyk.io/test/github/SeppPenner/MicroStrategyIServerScripts/badge.svg)](https://snyk.io/test/github/SeppPenner/MicroStrategyIServerScripts) 
 
 ## Basic usage:
 To add those scripts, copy the py-Files to your server under the /root-Folder and change the mode

@@ -11,7 +11,7 @@ MicroStrategyIServerScripts provide different scripts for the MicroStrategy Inte
 <li>isrestart.py:	Script to restart the MicroStrategy Intelligence Server</li>
 </ul>
 
-The script was written and tested in Python 2.6.8 but runs as well in Python 2.7.9.
+The script was written and tested in Python 2.6.8 but runs as well in Python 3.7.4.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/h9n6uochm3mu3o2p?svg=true)](https://ci.appveyor.com/project/SeppPenner/microstrategyiserverscripts)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/MicroStrategyIServerScripts.svg)](https://github.com/SeppPenner/MicroStrategyIServerScripts/issues)
@@ -51,6 +51,8 @@ You will need to change the paths in the scripts to your MicroStrategy Intellige
 
 Change history
 --------------
+
+* **Version 1.0.0.3 (2019-09-29)** : Updated python version.
 * **Version 1.0.0.2 (2017-12-05)** : Added the script to restart the IServer, added alias to restart tomcat.
 
 * **Version 1.0.0.1 (2016-12-10)** : Added script to terminate IServer. Added function that shows the script's run time (start, stop and terminate).

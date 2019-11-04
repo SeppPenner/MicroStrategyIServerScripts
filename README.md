@@ -17,7 +17,7 @@ The script was written and tested in Python 2.6.8 but runs as well in Python 3.7
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/MicroStrategyIServerScripts.svg)](https://github.com/SeppPenner/MicroStrategyIServerScripts/issues)
 [![GitHub forks](https://img.shields.io/github/forks/SeppPenner/MicroStrategyIServerScripts.svg)](https://github.com/SeppPenner/MicroStrategyIServerScripts/network)
 [![GitHub stars](https://img.shields.io/github/stars/SeppPenner/MicroStrategyIServerScripts.svg)](https://github.com/SeppPenner/MicroStrategyIServerScripts/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/MicroStrategyIServerScripts/master/License.txt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/SeppPenner/MicroStrategyIServerScripts/master/License.txt)
 [![Known Vulnerabilities](https://snyk.io/test/github/SeppPenner/MicroStrategyIServerScripts/badge.svg)](https://snyk.io/test/github/SeppPenner/MicroStrategyIServerScripts) 
 
 ## Basic usage:

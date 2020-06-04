@@ -11,7 +11,7 @@ MicroStrategyIServerScripts provide different scripts for the MicroStrategy Inte
 <li>isrestart.py:	Script to restart the MicroStrategy Intelligence Server</li>
 </ul>
 
-The script was written and tested in Python 2.6.8 but runs as well in Python 3.7.4.
+The script was written and tested in Python 2.6.8 but runs as well in Python 3.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/h9n6uochm3mu3o2p?svg=true)](https://ci.appveyor.com/project/SeppPenner/microstrategyiserverscripts)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/MicroStrategyIServerScripts.svg)](https://github.com/SeppPenner/MicroStrategyIServerScripts/issues)
